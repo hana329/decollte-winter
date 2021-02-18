@@ -1,0 +1,14 @@
+.u-w-lg {
+  width: 95%;
+  margin: 0 auto;
+  @include mq() {
+    width: 90%;
+  }
+}
+.u-w-md {
+  width: 90%;
+  margin: 0 auto;
+  @include mq() {
+    width: 80%;
+  }
+}

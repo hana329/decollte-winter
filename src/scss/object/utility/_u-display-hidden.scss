@@ -1,0 +1,32 @@
+.u-sp {
+  display: block !important;
+  @include mq() {
+    display: none !important;
+  }
+}
+.u-pc {
+  display: none !important;
+  @include mq() {
+    display: block !important;
+  }
+}
+.u-sp-i {
+  display: inline-block !important;
+  @include mq() {
+    display: none !important;
+  }
+}
+.u-hide {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.u-show {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.u-block {
+  display: block !important;
+}
+.u-inline-block {
+  display: inline-block !important;
+}

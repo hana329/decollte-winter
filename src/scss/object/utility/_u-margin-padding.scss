@@ -1,0 +1,75 @@
+// 余白の種類はS,M,Lなどの抽象的な命名をする
+//【NG例】.u-mt-10{margin-top:10px !important;}　←これはだめ
+.u-mt-xs {
+  margin-top: 5px !important;
+}
+.u-mt-s {
+  margin-top: 8px !important;
+}
+.u-mt-m {
+  margin-top: 15px !important;
+}
+.u-mt-l {
+  margin-top: 30px !important;
+}
+.u-mt-ll {
+  margin-top: 35px !important;
+}
+.u-mt-xl {
+  margin-top: 40px !important;
+}
+.u-mx-s {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.u-ml-m {
+  margin-left: 10px !important;
+}
+@include mq() {
+  .u-mt-s {
+    margin-top: 7px !important;
+  }
+  .u-mt-s {
+    margin-top: 10px !important;
+  }
+  .u-mt-m {
+    margin-top: 20px !important;
+  }
+  .u-mt-l {
+    margin-top: 40px !important;
+  }
+  .u-mt-ll {
+    margin-top: 60px !important;
+  }
+  .u-mt-xl {
+    margin-top: 80px !important;
+  }
+  .u-ml-m {
+    margin-left: 30px !important;
+  }
+}
+
+.u-mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.u-pb-0 {
+  padding-bottom: 0 !important ;
+}
+.u-pt-s {
+  padding-top: 8px !important;
+}
+@include mq() {
+  .u-pt-s {
+    padding-top: 10px !important;
+  }
+}
+
+.u-mp-header {
+  padding-top: $header-height;
+  margin-top: -$header-height;
+  @include mq() {
+    padding-top: $header-height_pc;
+    margin-top: -$header-height_pc;
+  }
+}

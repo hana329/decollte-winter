@@ -1,0 +1,37 @@
+.u-tac {
+  text-align: center !important;
+}
+.u-tal {
+  text-align: left !important;
+}
+.u-tar {
+  text-align: right !important;
+}
+// .u-taj{text-align: justify !important;}
+.u-gothic {
+  font-family: $gothic !important;
+}
+.u-mincho {
+  font-family: $mincho !important;
+}
+.u-bold {
+  font-weight: bold !important;
+}
+// .u-f_normal{font-weight:normal !important;}
+// .u-ls0{letter-spacing: 0 !important;}
+.u-color {
+  color: $main-c !important;
+}
+.u-ls_0 {
+  letter-spacing: 0 !important;
+}
+.u-fs_s {
+  font-size: rem(12) !important;
+  @include mq() {
+    font-size: rem(14) !important;
+  }
+}
+
+.u-f-grey {
+  color: rgba($black, 0.7);
+}
