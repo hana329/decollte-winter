@@ -4,7 +4,7 @@ html {
   // scroll-behavior: smooth;
 }
 body {
-  font-family: $mincho;
+  font-family: $gothic;
   font-weight: 500;
   line-height: 1.75;
   width: 100vw;
@@ -33,9 +33,9 @@ i {
   line-height: inherit;
   font-family: inherit;
 }
-p {
-  color: $black;
-}
+// p {
+//   color: $black;
+// }
 button {
   font-size: inherit;
   font-family: inherit;
@@ -54,36 +54,13 @@ button {
 // p,dt,dd,
 // tr,th,td,
 // li,a{font-size:rem(14);}
+h1 {
+  font-family: $mincho;
+}
 h2 {
   font-size: rem(25);
+  font-family: $mincho;
 }
-
-@include mq(sp) {
-  h2 {
-    font-size: rem(30);
-  }
+h3 {
+  font-family: $mincho;
 }
-
-@include mq() {
-  // body,p,dt,dd,
-  // tr,th,td,
-  // li,a{font-size:rem(16);}
-  h2 {
-    font-size: rem(30);
-  }
-  h3 {
-    font-size: rem(20);
-  }
-  h4 {
-    font-size: rem(18);
-  }
-  h5 {
-    font-size: rem(17);
-  }
-}
-
-// ::-webkit-scrollbar {
-//   display: none;
-//   -webkit-appearance: none;
-//   appearance: none;
-// }

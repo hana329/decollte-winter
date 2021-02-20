@@ -1,8 +1,18 @@
 // .u-c_white{color:#fff !important;}
 // .u-bg_white{background-color:#fff !important;}
-.u-bg_grey{
-  
+.u-bg_grey {
 }
 .u-relative {
   position: relative !important;
+}
+
+.u-dotted {
+  text-decoration: none !important;
+  border-bottom: 2px dotted !important;
+}
+.u-underline {
+  text-decoration: none !important;
+  border-width: 2px !important;
+  border-style: solid !important ;
+  border-color: transparent transparent $black transparent;
 }

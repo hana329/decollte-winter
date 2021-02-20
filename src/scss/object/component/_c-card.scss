@@ -1,0 +1,41 @@
+.c-card {
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+  }
+  &::before {
+    @include ba;
+    background: url(../images/parts-number.svg) no-repeat left top/ contain;
+    width: 25%;
+    height: 36px;
+    top: -4px;
+    left: 7px;
+  }
+  &::after {
+    counter-increment: number;
+    content: '0' counter(number);
+    font-size: rem(16);
+    font-family: $mincho;
+    top: 0;
+    left: 16px;
+  }
+  &:nth-of-type(10) {
+    &::after {
+      content: counter(number);
+    }
+  }
+}
+.c-card-wrapper {
+  counter-reset: number;
+}
+.c-card__text {
+  background-color: $white;
+  padding: 10px 5px;
+  color: $black;
+  font-family: $mincho;
+  line-height: 1.5;
+  text-align: center;
+  font-size: rem(13);
+  letter-spacing: 0;
+}

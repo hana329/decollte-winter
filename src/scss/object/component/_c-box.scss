@@ -1,0 +1,30 @@
+.c-box {
+  padding: 10px 15px;
+  background-color: rgba($white, 0.8);
+}
+.c-box--border {
+  padding: 10px 15px;
+  background-color: $white;
+  position: relative;
+  &::before {
+    @include ba;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    pointer-events: none;
+    border: 1px solid $w-main-c;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+}
+.c-box--border__title {
+  text-align: center;
+  font-size: rem(14);
+  font-weight: 700;
+  font-family: $mincho;
+}
+
+.c-box--border,
+.c-box--border__title {
+  color: darken($w-main-c, 15%);
+}

@@ -1,0 +1,124 @@
+.p-special-sakura {
+  .l-wrapper {
+    background-color: $s-base-c;
+  }
+  .c-box {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: -30px;
+  }
+}
+
+.p-special-sakura__banner {
+  display: flex;
+  text-decoration: none;
+}
+.p-special-sakura__banner__head {
+  width: 55%;
+  background-color: $s-base-c;
+  padding-top: 5px;
+}
+.p-special-sakura__banner__body {
+  width: 45%;
+  background-color: $white;
+  position: relative;
+  padding: 10px 2% 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .c-link {
+    background-color: $s-accent-c;
+    color: $white;
+    padding: 0 0.5em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.p-special-sakura__price {
+  max-width: 350px;
+  margin: 0 auto;
+  background: $white;
+  padding: 20px 30px 15px;
+  .title,
+  .price,
+  .discount {
+    font-family: $mincho;
+  }
+  .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .title {
+    line-height: 1;
+    font-size: rem(14);
+  }
+  .price {
+    text-decoration: line-through;
+    text-decoration-style: double;
+    font-size: rem(16);
+    margin-left: 5px;
+  }
+  .discount {
+    color: $s-accent02-c;
+    line-height: 1;
+    font-size: rem(18);
+    .strong {
+      font-size: 3em;
+    }
+  }
+  .arrow {
+    margin: 0 5px;
+  }
+}
+.p-special-sakura__banner__body .p-special-sakura__price {
+  padding: 0;
+  .cont {
+    justify-content: space-between;
+  }
+  .price {
+    margin-left: 0;
+    font-size: rem(14);
+  }
+  .title {
+    font-size: rem(12);
+  }
+  .discount {
+    font-size: rem(16);
+    .strong {
+      font-size: 2.5em;
+    }
+  }
+}
+.p-special-sakura__title {
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: z(second);
+  + .p-special-sakura__price {
+    margin-top: -15px;
+    position: relative;
+    z-index: z(first);
+  }
+}
+
+.p-special-sakura__image {
+  width: 100%;
+  display: flex;
+  img {
+    width: 100%;
+  }
+  // margin: 0 calc(50% - 50vw);
+  // width: 100vw;
+}
+
+.p-special-sakura__footer {
+  margin-top: 30px;
+  background-color: $s-accent-c;
+  text-align: center;
+  color: $white;
+  font-family: $mincho;
+  padding: 20px 0;
+  font-size: rem(17);
+}

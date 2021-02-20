@@ -1,0 +1,18 @@
+.c-list--check {
+  display: flex;
+  align-items: center;
+  font-family: $mincho;
+  font-size: rem(16);
+  line-height: 1.6;
+  &::before {
+    @include ba;
+    width: 1.5em;
+    height: 2em;
+    // background: url(../images/ico-check.svg) center contain;
+    background: url(../images/ico-check.svg) no-repeat center/ contain;
+    margin-right: 5px;
+  }
+  + .c-list--check {
+    margin-top: 0.7em;
+  }
+}

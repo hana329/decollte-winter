@@ -1,0 +1,42 @@
+.c-title {
+  &.-sm {
+    font-size: 4vw;
+    @include mq() {
+      font-size: rem(20);
+    }
+  }
+  &.-md {
+    font-size: 6vw;
+    @include mq() {
+      font-size: rem(30);
+    }
+  }
+  &.-lg {
+    font-size: 8vw;
+    @include mq() {
+      font-size: rem(40);
+    }
+  }
+  &.-tac {
+    text-align: center;
+  }
+  &.-gothic {
+    font-family: $gothic;
+  }
+  .accent {
+    color: $w-accent-c;
+  }
+}
+.c-title__sub {
+  display: block;
+  text-align: inherit;
+  &.-sm {
+    font-size: rem(12);
+  }
+  &.-md {
+    font-size: rem(14);
+  }
+  &.-lg {
+    font-size: rem(16);
+  }
+}

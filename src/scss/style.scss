@@ -8,19 +8,28 @@
 @import './foundation/zindex';
 
 /*-----------レイアウト　接頭辞「l-」-----------*/
-@import './layout/l-common'; //全ページで利用可能なレイアウト
+@import './layout/l-common';
 @import './layout/l-header';
 @import './layout/l-footer';
 
 /*----------パーツ 接頭辞「c-」------------*/
+@import './object/component/c-title';
+@import './object/component/c-text';
 @import './object/component/c-button';
+@import './object/component/c-link';
+@import './object/component/c-list';
+@import './object/component/c-box';
+@import './object/component/c-card';
 
 /*--------個別ページ　接頭辞「p-」--------------*/
+@import './object/project/p-special';
 @import './object/project/p-special-winter';
+@import './object/project/p-special-sakura';
 
 /*---------ヘルパークラス　接頭辞「u-」-------------*/
 @import './object/utility/u-display-hidden';
 @import './object/utility/u-margin-padding';
+
 // @import './object/utility/u-text-font';
-// @import './object/utility/u-other';
+@import './object/utility/u-other';
 // @import './object/utility/u-width-height';

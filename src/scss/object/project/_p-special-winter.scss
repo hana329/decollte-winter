@@ -1,2 +1,57 @@
 .p-special-winter {
+  .l-wrapper {
+    &:not(.-bg) {
+      background-color: $w-main-c;
+      color: $white;
+    }
+    &.-bg {
+      background-color: $w-base-c;
+    }
+  }
+  .c-box--border {
+    .c-text {
+      .accent {
+        color: $w-accent-c;
+      }
+      .big {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .u-underline {
+    border-color: transparent transparent $w-accent02-c transparent;
+  }
+}
+.p-special-winter__title {
+  color: #ffe9db;
+}
+.p-special-winter__second-title {
+  line-height: 1;
+  display: block;
+  margin-top: 15px;
+  .big {
+    font-size: 1.3em;
+  }
+}
+.p-special-winter__gift-title {
+  position: relative;
+  &::before,
+  &::after {
+    @include ba;
+    position: absolute;
+    width: 11%;
+    height: 100%;
+    background: url(../images/title-gift.svg) no-repeat center bottom/ contain;
+    bottom: 0;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+}
+.p-special-winter__bg {
+  background: url(../images/bg-winter.svg) no-repeat center top/ contain;
 }

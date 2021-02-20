@@ -1,17 +1,13 @@
 $z-map: (
-  footer: true,
-  base: true,
-  main: true,
-  header: true,
-  side: true,
-  modal: true,
-  overlay: true,
-  loading: true,
+  first: true,
+  second: true,
+  third: true,
   child: (
     first,
     second,
     third,
   ),
+  header: true,
 );
 
 // z-index
