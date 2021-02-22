@@ -15,7 +15,6 @@
 /*----------パーツ 接頭辞「c-」------------*/
 @import './object/component/c-title';
 @import './object/component/c-text';
-@import './object/component/c-button';
 @import './object/component/c-link';
 @import './object/component/c-list';
 @import './object/component/c-box';
@@ -29,7 +28,5 @@
 /*---------ヘルパークラス　接頭辞「u-」-------------*/
 @import './object/utility/u-display-hidden';
 @import './object/utility/u-margin-padding';
-
-// @import './object/utility/u-text-font';
 @import './object/utility/u-other';
-// @import './object/utility/u-width-height';
+

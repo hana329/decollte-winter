@@ -59,7 +59,7 @@ h2 { font-size: 1.5625rem; font-family: "游明朝", YuMincho, "Noto Serif JP", 
 h3 { font-family: "游明朝", YuMincho, "Noto Serif JP", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif; }
 
 /*-----------レイアウト　接頭辞「l-」-----------*/
-.l-viewport { max-width: 640px; margin: 0 auto; }
+.l-viewport { max-width: 450px; margin: 0 auto; }
 
 .l-wrapper { padding: 30px 0; }
 

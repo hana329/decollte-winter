@@ -33,9 +33,7 @@ i {
   line-height: inherit;
   font-family: inherit;
 }
-// p {
-//   color: $black;
-// }
+
 button {
   font-size: inherit;
   font-family: inherit;
@@ -47,13 +45,10 @@ button {
   cursor: pointer;
   &:focus {
     opacity: 0.6;
-    // border: 1px solid $border-c;
   }
 }
 /*-------フォントサイズ---------*/
-// p,dt,dd,
-// tr,th,td,
-// li,a{font-size:rem(14);}
+
 h1 {
   font-family: $mincho;
 }

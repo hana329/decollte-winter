@@ -58,20 +58,3 @@ $breakpoints: (
     @content;
   }
 }
-
-// $breakpoints: (
-//   'sp': 'screen and (min-width: 640px)',
-//   'sp_up': 'screen and (min-width:768px)',
-//   'tab': 'screen and (min-width:' +
-//     (
-//       $win_s + 1,
-//     )+ ')',
-//   'pc': 'screen and (min-width:' +
-//     (
-//       $win_m + 1,
-//     )+ ')',
-//   'cont': 'screen and (min-width:' +
-//     (
-//       $win_l + 1,
-//     )+ ')',
-// ) !default;
